@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | AaryanCodes</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <nav>
+        <h3 ><a href="#hero"></a>
+            <img src="./light logo.png" alt="Logo" height="45px" width="45px" >
+            AaryanCodes
+        </h3>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul id="navMenu">
+            <li><a href="#hero" class="nav-link">Home</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero">
+        <div class="left">
+            <div class="hero-text">
+                <h2>I'm Aaryan Bajgain!</h2>
+                <span>Web Developer & Tech Enthusiast</span>
+            </div>
+            <p class="hero-desc">
+                Passionate about creating innovative web solutions and bringing ideas to life through code. 
+                I specialize in modern web technologies and love crafting user-friendly experiences.
+            </p>
+            <div id="download-cv">
+                <button onclick="downloadCV()">Download CV</button>
+            </div>
+        </div>
+        <img src="image.jpg" class="hero-image" alt="Aaryan Bajgain" />
+    </section>
+
+    <section id="projects">
+        <div class="title">
+            <h2>My Projects</h2>
+            <p class="sub-title">
+                Explore some of my recent work and creative solutions
+            </p>
+        </div>
+        <div class="project-list">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="image.jpg" alt="Project 1" />
+                </div>
+                <div class="card-details">
+                    <h4 class="card-title">E-Commerce Platform</h4>
+                    <p class="card-description">
+                        A modern e-commerce solution with responsive design and seamless user experience.
+                    </p>
+                    <button class="live-demo-btn" onclick="openDemo('project1')">Live Demo</button>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="image.jpg" alt="Project 2" />
+                </div>
+                <div class="card-details">
+                    <h4 class="card-title">Task Management App</h4>
+                    <p class="card-description">
+                        An intuitive task management application with real-time collaboration features.
+                    </p>
+                    <button class="live-demo-btn" onclick="openDemo('project2')">Live Demo</button>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="image.jpg" alt="Project 3" />
+                </div>
+                <div class="card-details">
+                    <h4 class="card-title">Weather Dashboard</h4>
+                    <p class="card-description">
+                        A comprehensive weather application with detailed forecasts and beautiful visualizations.
+                    </p>
+                    <button class="live-demo-btn" onclick="openDemo('project3')">Live Demo</button>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="image.jpg" alt="Project 4" />
+                </div>
+                <div class="card-details">
+                    <h4 class="card-title">Social Media Clone</h4>
+                    <p class="card-description">
+                        A feature-rich social media platform with posts, comments, and user interactions.
+                    </p>
+                    <button class="live-demo-btn" onclick="openDemo('project4')">Live Demo</button>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="image.jpg" alt="Project 5" />
+                </div>
+                <div class="card-details">
+                    <h4 class="card-title">Portfolio Website</h4>
+                    <p class="card-description">
+                        A responsive portfolio showcase with modern design and smooth animations.
+                    </p>
+                    <button class="live-demo-btn" onclick="openDemo('project5')">Live Demo</button>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="image.jpg" alt="Project 6" />
+                </div>
+                <div class="card-details">
+                    <h4 class="card-title">Blog Platform</h4>
+                    <p class="card-description">
+                        A content management system for bloggers with rich text editing capabilities.
+                    </p>
+                    <button class="live-demo-btn" onclick="openDemo('project6')">Live Demo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="details">
+            <h2>About Myself!</h2>
+            <p>
+                I'm a passionate web developer with a keen eye for design and a love for clean, efficient code. 
+                With years of experience in modern web technologies, I enjoy turning complex problems into 
+                simple, beautiful, and intuitive solutions. When I'm not coding, you can find me exploring 
+                new technologies, contributing to open-source projects, or sharing knowledge with the developer community.
+            </p>
+            <div class="social-links">
+                <a href="#" onclick="openSocial('linkedin')">LinkedIn</a>
+                <a href="#" onclick="openSocial('twitter')">Twitter</a>
+                <a href="#" onclick="openSocial('github')">GitHub</a>
+            </div>
+        </div>
+        <div>
+            <img src="image.jpg" alt="About Aaryan" class="about-img" />
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="form-header">
+                <h1>Contact Me</h1>
+                <p>Let's start a conversation. I'd love to hear from you!</p>
+            </div>
+
+            <form id="contactForm" novalidate>
+                <div class="form-row">
+                    <div class="form-group floating-label">
+                        <input type="text" id="firstName" name="firstName" class="form-control" placeholder=" " required>
+                        <label for="firstName">First Name *</label>
+                    </div>
+                    <div class="form-group floating-label">
+                        <input type="text" id="lastName" name="lastName" class="form-control" placeholder=" " required>
+                        <label for="lastName">Last Name *</label>
+                    </div>
+                </div>
+
+                <div class="form-group floating-label">
+                    <input type="email" id="email" name="email" class="form-control" placeholder=" " required>
+                    <label for="email">Email Address *</label>
+                </div>
+
+                <div class="form-group floating-label">
+                    <input type="tel" id="phone" name="phone" class="form-control" placeholder=" ">
+                    <label for="phone">Phone Number</label>
+                </div>
+
+                <div class="form-group floating-label">
+                    <input type="text" id="subject" name="subject" class="form-control" placeholder=" " required>
+                    <label for="subject">Subject *</label>
+                </div>
+
+                <div class="form-group floating-label">
+                    <textarea id="message" name="message" class="form-control" placeholder=" " required></textarea>
+                    <label for="message">Your Message *</label>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+
+                <div id="successMessage" class="success-message">
+                    Thank you! Your message has been sent successfully. I'll get back to you soon!
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="footer">
+        <footer>
+            <h5>© 2025 AaryanCodes Portfolio. All rights reserved.</h5>
+        </footer>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
