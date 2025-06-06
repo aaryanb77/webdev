@@ -74,7 +74,10 @@
             font-size: 18px;
             font-weight: 500;
             transition: color 0.3s ease;
-            position: relative; /* For the underline effect */
+            position: relative; /* For the underline effect */        
+        }
+        a{
+            text-decoration: none;
         }
 
         nav ul a:hover {
