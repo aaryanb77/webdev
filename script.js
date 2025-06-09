@@ -1,14 +1,11 @@
 
         document.addEventListener('DOMContentLoaded', function () {
-            // Get references to DOM elements
             const menuToggle = document.getElementById('menuToggle');
             const navMenu = document.getElementById('navMenu');
             const navLinks = document.querySelectorAll('.nav-link');
             const contactForm = document.getElementById('contactForm');
             const successMessage = document.getElementById('successMessage');
 
-            // --- Mobile Navigation Toggle Functionality (Simple JS for Responsiveness) ---
-            // This toggles the 'active' classes which trigger CSS styles for showing/hiding the mobile menu
             menuToggle.addEventListener('click', function () {
                 navMenu.classList.toggle('active');
                 menuToggle.classList.toggle('active'); // For animating the hamburger icon to an 'X'
